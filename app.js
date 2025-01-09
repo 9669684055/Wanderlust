@@ -116,6 +116,10 @@ app.use("/" , userRouter);
  res.status(statusCode).render("error.ejs",{message});
  });
 
+ app.get("/" , (req, res) => {
+    res.send("Home route is working!");
+ })
+ 
 app.listen(PORT, () => {
     console.log(`serve is listening to port  ${PORT}`);
 });
