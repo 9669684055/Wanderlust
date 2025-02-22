@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
@@ -53,7 +54,7 @@ const store = MongoStore.create({
     touchAfter: 24 * 3600,
 });
 
-store.on( "error" , () => {
+store.on( "error" , (err) => {
     console.log("ERROR in MONGO SESSION STORE " , err);
 });
 
@@ -120,6 +121,6 @@ app.use("/" , userRouter);
     res.send("Home route is working!");
  })
  
-app.listen(PORT, () => {
-    console.log(`serve is listening to port  ${PORT}`);
+app.listen(port, () => {
+    console.log(`serve is listening to port  ${port}`);
 });
