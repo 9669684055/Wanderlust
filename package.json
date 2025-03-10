@@ -4,6 +4,7 @@
    },
    "name": "wanderlust",
    "version": "1.0.0",
+   "homepage": "https://github.com/9669684055/Wanderlust.git",
    "rootDir": "majorproject",
    "main": "app.js",
    "dependencies": {
