@@ -2,7 +2,7 @@
    "engines": {
       "node": "v20.15.1"
    },
-   "name": "majorproject",
+   "name": "wanderlust",
    "version": "1.0.0",
    "rootDir": "majorproject",
    "main": "app.js",
